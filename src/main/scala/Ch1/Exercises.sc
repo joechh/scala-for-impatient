@@ -12,12 +12,11 @@ BigInt(2).pow(1024)
 //Ex.7
 import scala.math.BigInt._
 import scala.util._
-probablePrime(100,Random)
+
+probablePrime(100, Random)
 //Ex.8
-BigInt(10,Random).toString(36)
+BigInt(10, Random).toString(36)
 //Ex.9
-"string"(0)
+"string" (0)
 "string".last
-
-
 
