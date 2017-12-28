@@ -11,6 +11,8 @@ object StdInDemo {
     print("your age:")
     val myage = StdIn.readInt()
     print(s"my age is $myage years old")
+    val n ="abc"
+    for(n<-1 to 10) println(n)
   }
 
 }

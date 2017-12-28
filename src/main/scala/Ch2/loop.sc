@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 var r = 10
 var n = 5
 
@@ -41,9 +43,5 @@ for (i <- 1 to 10) yield i % 3
 
 for (c <- "Hello"; i <- 0 to 1) yield (c + i).toChar
 for (i <- 0 to 1; c <- "Hello") yield (c + i).toChar
-
-
-
-
 
 
