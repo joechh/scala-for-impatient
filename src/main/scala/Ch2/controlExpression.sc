@@ -26,6 +26,9 @@ println(raw"\n is newline")
 //String interpolator
 println(s"Hello, $name")
 println(s"1 + 1 = ${1 + 1}")
-println(s"Hello, $$$name")
+println(s"Hello, $$name")
+def decorate(str: String, left: String = "[", right: String = "]") = left + str + right
+
+
 
 
