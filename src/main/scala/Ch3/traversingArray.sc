@@ -10,3 +10,7 @@ for (i <- array.indices) println(s"[$i]: ${array(i)}")
 
 //more concise
 for (i <- array.indices.reverse) println(s"[$i]: ${array(i)}")
+
+//if not need array index, like foreach loop in Java
+for(element<-array)
+  print(s"$element ")
