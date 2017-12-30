@@ -1,6 +1,4 @@
 import java.awt.datatransfer.{DataFlavor, SystemFlavorMap}
-
-import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 //1.
