@@ -9,6 +9,14 @@ TrafficLightColor.Red
 TrafficLightColor.Yellow
 TrafficLightColor.Green
 
+//return Value Set
+TrafficLightColor.values
+for (c <- TrafficLightColor.values) println(s"${c.id}:${c.toString}")
+//Lookup Value by id or name
+TrafficLightColor(0)
+TrafficLightColor.withName("Go")
+
+
 //alias type Value to TrafficLightColor for hiding Value
 
 //color: TrafficLightColor = color:TrafficLightColor.TrafficLightColor( which is alias of Value)
@@ -22,16 +30,10 @@ object TrafficLightColor2 extends Enumeration {
 
 import TrafficLightColor2._
 
+//
 def doWhat(color: TrafficLightColor2) = color match {
   case Red => "stop"
   case Yellow => "hurry up"
   case _ => "go"
 }
 doWhat(Yellow)
-
-//return Value Set
-TrafficLightColor.values
-for (c <- TrafficLightColor.values) println(s"${c.id}:${c.toString}")
-//Lookup Value by id or name
-TrafficLightColor(0)
-TrafficLightColor.withName("Go")

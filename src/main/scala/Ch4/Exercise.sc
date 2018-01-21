@@ -45,7 +45,7 @@ while (in.hasNext()) {
 }
 sortedMap.foreach(kv => println(s"${kv._1}:${kv._2}"))
 
-//5.using java TreeMap and Scla API
+//5.using java TreeMap and Scala API
 import scala.collection.JavaConverters._
 
 var treeMap = new java.util.TreeMap[String, Int]()
