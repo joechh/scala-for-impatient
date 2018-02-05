@@ -4,6 +4,7 @@ import scala.sys.process._
 
 //return 0 if execute successfully
 val res = "ls -al /home/joechh".!
+println(res)
 
 //return result as a string
 var resStr = "ls -al /home/joechh".!!
@@ -16,4 +17,3 @@ var resStr = "ls -al /home/joechh".!!
 
 
 ("echo test" #>> new File("/home/joechh/test")).!
-

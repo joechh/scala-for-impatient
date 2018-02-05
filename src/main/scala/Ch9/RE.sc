@@ -24,7 +24,7 @@ numPattern.replaceFirstIn("99 bottles, 98 bottles", "300")
 numPattern.replaceAllIn("99 bottles, 98 bottles", "300")
 
 //replaceSome
-numPattern.replaceSomeIn("30 bottles, 98 bottles",
+numPattern.replaceSomeIn("15 bottles, 98 bottles",
   matching => if (matching.matched.toInt % 2 == 0) Some("even") else None
 )
 
