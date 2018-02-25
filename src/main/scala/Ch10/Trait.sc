@@ -61,7 +61,9 @@ acct2.withdraw(120)
 
 
 trait A {
-  def testMethod:Unit
+  def testMethod={
+    println("method in trait A ")
+  }
 }
 
 trait B {
@@ -70,7 +72,6 @@ trait B {
   }
 }
 
-class TestClass extends B with A
-
-val t = new TestClass
-t.testMethod
+// inherits conflict
+// !class TestClass extends B with A
+// val t = new TestClass

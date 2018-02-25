@@ -1,7 +1,6 @@
 import java.io.IOException
-import javax.swing.JFrame
-//11.12 Traits Extending Classes
 
+//11.12 Traits Extending Classes
 trait Logger {
   def log(msg: String): Unit
 }

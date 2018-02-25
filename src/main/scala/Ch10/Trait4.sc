@@ -1,6 +1,6 @@
 import java.io.PrintWriter
 
-//10.8 Concrete Fields in Trait
+//10.9 Concrete Fields in Trait
 trait Logger {
   def log(msg: String): Unit
 }
@@ -37,7 +37,7 @@ abstract class SavingsAccount(initValue: Int) extends Account with ConsoleLogger
 }
 
 abstract class SavingAccount2 extends Account with Logger
-
+//mix-in, should override abstract field maxLength
 val acct = new SavingAccount2 with ConsoleLogger with ShortLogger {
   override val maxLength = 1
 }

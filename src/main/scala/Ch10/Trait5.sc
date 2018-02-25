@@ -1,6 +1,6 @@
 import java.io.PrintWriter
-//10.11
 
+//10.11
 trait Logger {
   def log(msg: String): Unit
 }
